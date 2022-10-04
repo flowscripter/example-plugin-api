@@ -1,32 +1,33 @@
-# template-deno-library
+# example-plugin-api
 
-[![version](https://img.shields.io/github/v/release/flowscripter/template-deno-library?sort=semver)](https://github.com/flowscripter/template-deno-library/releases)
-[![build](https://img.shields.io/github/workflow/status/flowscripter/template-deno-library/release-deno-library)](https://github.com/flowscripter/template-deno-library/actions/workflows/release-deno-library.yml)
-[![coverage](https://codecov.io/gh/flowscripter/template-deno-library/branch/main/graph/badge.svg?token=EMFT2938ZF)](https://codecov.io/gh/flowscripter/template-deno-library)
-[![dependencies](https://img.shields.io/endpoint?url=https%3A%2F%2Fdeno-visualizer.danopia.net%2Fshields%2Fupdates%2Fhttps%2Fraw.githubusercontent.com%2Fflowscripter%2Ftemplate-deno-library%2Fmain%2Fmod.ts)](https://github.com/flowscripter/template-deno-library/blob/main/deps.ts)
-[![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https://deno.land/x/flowscripter_template_deno_library/mod.ts)
-[![license: MIT](https://img.shields.io/github/license/flowscripter/template-deno-library)](https://github.com/flowscripter/template-deno-library/blob/main/LICENSE)
+[![version](https://img.shields.io/github/v/release/flowscripter/example-plugin-api?sort=semver)](https://github.com/flowscripter/example-plugin-api/releases)
+[![build](https://img.shields.io/github/workflow/status/flowscripter/example-plugin-api/release-deno-library)](https://github.com/flowscripter/example-plugin-api/actions/workflows/release-deno-library.yml)
+[![coverage](https://codecov.io/gh/flowscripter/example-plugin-api/branch/main/graph/badge.svg?token=EMFT2938ZF)](https://codecov.io/gh/flowscripter/example-plugin-api)
+[![dependencies](https://img.shields.io/endpoint?url=https%3A%2F%2Fdeno-visualizer.danopia.net%2Fshields%2Fupdates%2Fhttps%2Fraw.githubusercontent.com%2Fflowscripter%2Fexample-plugin-api%2Fmain%2Fmod.ts)](https://github.com/flowscripter/example-plugin-api/blob/main/deps.ts)
+[![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https://deno.land/x/flowscripter_example_plugin_api/mod.ts)
+[![license: MIT](https://img.shields.io/github/license/flowscripter/example-plugin-api)](https://github.com/flowscripter/example-plugin-api/blob/main/LICENSE)
 
-> Project template for a Deno library.
-
-## Project Template Usage
-
-1. Use as a
-   [template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)
-   to create a new repository.
-2. Update links and references in `README.md`.
+> Example plugin API for the
+> [dynamic-plugin-framework](https://github.com/flowscripter/dynamic-plugin-framework).
 
 ## Deno Module Usage
 
 ```typescript
-import { world } from "https://deno.land/x/flowscripter_template_deno_library/mod.ts";
+import {
+  EXTENSION_POINT_1,
+  ExtensionPoint1,
+} from "https://deno.land/x/flowscripter_example_plugin_api/mod.ts";
 
-world();
+// ExtensionPoint1 is identified by EXTENSION_POINT_1 identifier
+
+class MyExtensionPointImplementation implements ExtensionPoint1 {
+  public sayHello(): void {
+    // greetings...
+  }
+}
 ```
 
 ## Development
-
-Test: `deno test -A --unstable`
 
 Lint: `deno fmt`
 
@@ -36,14 +37,18 @@ Lint: `deno fmt`
 
 ```mermaid
 classDiagram
-    Foo <|-- Bar
+    
+   class ExtensionPoint1 {
+      <<interface>>
+      sayHello()
+   }
 ```
 
 ### API
 
 Link to auto-generated API docs for the library:
 
-[API Documentation](https://doc.deno.land/https://deno.land/x/flowscripter_template_deno_library/mod.ts)
+[API Documentation](https://doc.deno.land/https://deno.land/x/flowscripter_example_plugin_api/mod.ts)
 
 ## License
 
