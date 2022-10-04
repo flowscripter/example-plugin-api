@@ -1,4 +1,4 @@
-name: run-deno-docs-and-tests
+name: run-deno-docs
 on:
   pull_request:
     branches: [main]
