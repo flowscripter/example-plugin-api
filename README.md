@@ -44,6 +44,10 @@ classDiagram
    }
 ```
 
+### Framework API
+
+Refer to the [dynamic-plugin-framework](https://github.com/flowscripter/dynamic-plugin-framework) for an overview of what this example is demonstrating.
+
 ### API
 
 Link to auto-generated API docs for the library:
