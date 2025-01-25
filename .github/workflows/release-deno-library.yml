@@ -3,10 +3,6 @@ on:
   push:
     branches: [main]
 jobs:
-  release:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Release Deno
-        uses: flowscripter/.github/actions/release-deno-library@v1
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+  call-release-deno-library:
+    uses: flowscripter/.github/.github/workflows/release-deno-library.yml@v1
+    secrets: inherit
