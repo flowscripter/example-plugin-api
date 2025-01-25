@@ -3,8 +3,6 @@ on:
   pull_request:
     branches: [main]
 jobs:
-  check-docs:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deno Docs
-        uses: flowscripter/.github/actions/generate-deno-docs@v1
+  call-run-deno-docs:
+    uses: flowscripter/.github/.github/workflows/run-deno-docs.yml@v1
+    secrets: inherit
