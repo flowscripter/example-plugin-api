@@ -7,7 +7,7 @@
 [![license: MIT](https://img.shields.io/github/license/flowscripter/example-plugin-api)](https://github.com/flowscripter/example-plugin-api/blob/main/LICENSE)
 
 > Example plugin API for the
-> [dynamic-plugin-framework](https://github.com/flowscripter/dynamic-plugin-framework).
+> [dynamic-plugin-framework](https://github.com/flowscripter/dynamic-plugin-framework)
 
 ## Deno Module Usage
 
