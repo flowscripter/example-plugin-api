@@ -2,6 +2,7 @@
 
 [![version](https://img.shields.io/github/v/release/flowscripter/example-plugin-api?sort=semver)](https://github.com/flowscripter/example-plugin-api/releases)
 [![build](https://img.shields.io/github/actions/workflow/status/flowscripter/example-plugin-api/release-bun-library.yml)](https://github.com/flowscripter/example-plugin-api/actions/workflows/release-bun-library.yml)
+[![coverage](https://codecov.io/gh/flowscripter/example-plugin-api/branch/main/graph/badge.svg?token=EMFT2938ZF)](https://codecov.io/gh/flowscripter/example-plugin-api)
 [![docs](https://img.shields.io/badge/docs-API-blue)](https://flowscripter.github.io/example-plugin-api/index.html)
 [![license: MIT](https://img.shields.io/github/license/flowscripter/example-plugin-api)](https://github.com/flowscripter/example-plugin-api/blob/main/LICENSE)
 
