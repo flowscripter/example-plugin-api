@@ -1,7 +1,11 @@
 {
   "name": "@flowscripter/example-plugin-api",
   "description": "Example plugin API for the https://github.com/flowscripter/dynamic-plugin-framework",
-  "repository": "@flowscripter/example-plugin-api",
+  "homepage": "https://github.com/flowscripter/example-plugin-api#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flowscripter/example-plugin-api.git"
+  },
   "license": "MIT",
   "keywords": [
     "bun",
