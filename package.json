@@ -1,23 +1,23 @@
 {
   "name": "@flowscripter/example-plugin-api",
+  "version": "1.0.8",
   "description": "Example plugin API for the https://github.com/flowscripter/dynamic-plugin-framework",
+  "keywords": [
+    "bun",
+    "dynamic",
+    "example",
+    "framework",
+    "import",
+    "plugin"
+  ],
   "homepage": "https://github.com/flowscripter/example-plugin-api#readme",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/flowscripter/example-plugin-api.git"
   },
-  "license": "MIT",
-  "keywords": [
-    "bun",
-    "example",
-    "plugin",
-    "framework",
-    "dynamic",
-    "import"
-  ],
-  "module": "index.ts",
   "type": "module",
-  "version": "1.0.8",
+  "module": "index.ts",
   "publishConfig": {
     "access": "public"
   },
