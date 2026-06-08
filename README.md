@@ -18,10 +18,7 @@ Add the module:
 Use the module:
 
 ```typescript
-import {
-  EXTENSION_POINT_1,
-  ExtensionPoint1,
-} from "@flowscripter/example-plugin-api";
+import { EXTENSION_POINT_1, ExtensionPoint1 } from "@flowscripter/example-plugin-api";
 
 // ExtensionPoint1 is identified by EXTENSION_POINT_1 identifier
 
@@ -38,20 +35,17 @@ Test:
 
 `bun test`
 
-**NOTE**: The following tasks use Deno as it excels at these and Bun does not
-currently provide such functionality:
-
 Format:
 
-`deno fmt`
+`bunx oxfmt`
 
 Lint:
 
-`deno lint index.ts`
+`bunx oxlint index.ts`
 
 Generate HTML API Documentation:
 
-`deno doc --html --name=example-plugin-api index.ts`
+`bunx typedoc --readme none index.ts`
 
 ## Documentation
 
@@ -59,7 +53,7 @@ Generate HTML API Documentation:
 
 ```mermaid
 classDiagram
-    
+
    class ExtensionPoint1 {
       <<interface>>
       sayHello()
