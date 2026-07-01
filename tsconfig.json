@@ -26,5 +26,5 @@
 
     "types": ["bun", "node"]
   },
-  "exclude": ["tests"]
+  "exclude": ["tests", "dist"]
 }
